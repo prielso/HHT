@@ -86,7 +86,6 @@ def ht_hyperbola_slow_a0_a2(data, num_of_hyperbolas, sigma, convx_min=1e-4, conv
                     for j in range(error_idx):
                         if a1_idx + j in range(a1_num):
                             voting_space[a2, a1_idx + j, a0] += 1
-
     max_vote = np.amax(voting_space)
     max_voting_idx = np.where(voting_space == np.amax(voting_space))
     return max_voting_idx, max_vote
@@ -137,7 +136,6 @@ def ht_hyperbola_faster_a0_a2(data, num_of_hyperbolas, sigma, convx_min=1e-4, co
                         for j in range(error_idx):
                             if a1_idx + j in range(a1_num):
                                 voting_space[a2, a1_idx + j, a0] += 1
-
     max_vote = np.amax(voting_space)
     max_voting_idx = np.where(voting_space == np.amax(voting_space))
     return max_voting_idx, max_vote
