@@ -15,12 +15,10 @@ def hht(data, num_of_hyperbolas, sigma, convx_min, convx_max, convx_resolution, 
        the location of the peak we are looking for is inside the data (means that a0 is lower the data.shape[0]).
     2. a2 - is the 'x' coordinate of the hyperbola peak (could be also referred as the peak's coloumn indice).
        the location of the peak we are looking for is inside the data (means that a0 is lower the data.shape[1]).
-       TBD - adding margins to the range of the a2 meaning we are looking for hyperbola that their peak is either left
-       or right ot the data.
     3. a1 - is the convexity of the hyperbola.
        the higher the value of a1 the sharper the hyperbola will look (more pointy).
-       after ampirically observation of the a1 values we conclude that the range for a1 values needs to be define by the
-       user, that includes the size of the shape you are looking for and how much the hyperbola will cover the Bscan.
+       after ampirically observation of the a1 values we conclude that the range of a1 values needs to be defined by the
+       user.
     :param data: numpy array.
     :param num_of_hyperbolas: how many hyperbolas to return (starting from the highest score hyperbola downwards).
     :param sigma: the first stage of the Canny algorithm (edges detector) is smoothing the data
