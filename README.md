@@ -30,7 +30,7 @@ for every known edge pixel coordinate we run through all the feasible combinatio
 In the end we present the combination that got the most votes as the most likely Hyperbola in the image. 
 We have developed few versions for the algorithm which differ mainly in the order which the Hyperbola's parameters are been "scanned".
 <br>
-#### This brute force solution for the HHT algorithm in pseudo-code is like so:
+#### This is a brute force solution for the HHT algorithm in pseudo-code:
 
 HHT (image):
 
